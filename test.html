@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        @media only screen and (min-width: 600px) {
+            .main{
+                grid-auto-columns:200px  ;
+                display: grid;
+                flex-wrap: wrap;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-template-columns: repeat(2,1fr);
+            }
+           
+        }
+    
+        @media only screen and (min-width: 900px) {
+            .main{
+                grid-auto-columns:200px  ;
+                display: grid;
+                flex-wrap: wrap;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+            
+            }
+        }
+        body {
+            background-color: rgb(19, 18, 18);
+            color:#F7ad02;
+            justify-content: stretch;
+        }
+        .main{
+            display: grid;
+            grid-row-gap:10px;
+            margin:90px;
+            
+        }    
+        p{
+            color: aliceblue;
+        }
+        .card{
+            display: grid;
+            background:url("https://cigarlounge.co.tz/web-images/infused_event/69.jpg") no-repeat center;
+            border-radius: 3px;
+            border: 3px solid rgb(122, 122, 2);
+            opacity: 80%;
+            align-items:center;
+            height: 400px;
+            width: 400px;
+            text-align: justify;
+        }
+        .card:hover{
+           opacity:100%;
+        }
+        .content{
+            display:flexbox;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 120px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card" >
+           <div class="content">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo ut ex, voluptatem natus culpa quam cumque quasi ipsam obcaecati molestiae voluptas magnam praesentium ipsa harum voluptates possimus totam architecto?</p>  
+           </div>
+          
+        </div>
+        <div class="card">
+            
+            <div class="content">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo ut ex, voluptatem natus culpa quam cumque quasi ipsam obcaecati molestiae voluptas magnam praesentium ipsa harum voluptates possimus totam architecto?</p>  
+           </div>
+        </div>
+        <div class="card">
+           
+            <div class="content">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo ut ex, voluptatem natus culpa quam cumque quasi ipsam obcaecati molestiae voluptas magnam praesentium ipsa harum voluptates possimus totam architecto?</p>  
+           </div>
+        </div>
+        <div class="card">
+        
+            <div class="content">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo ut ex, voluptatem natus culpa quam cumque quasi ipsam obcaecati molestiae voluptas magnam praesentium ipsa harum voluptates possimus totam architecto?</p>  
+           </div>
+        </div>
+    </div>
+</body>
+</html>
